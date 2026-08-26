@@ -1230,3 +1230,99 @@ nav a:hover{
     color: #eb8bb0;
 }
 
+/*=========================================
+      RESPONSIVE SOLO PARA CELULAR
+=========================================*/
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* HEADER */
+    .header{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:20px;
+    }
+
+    .logo{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .logo h1{
+        font-size:26px;
+    }
+
+    .imagen-lado{
+        width:50px;
+        height:50px;
+    }
+
+    .logo-container{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+        margin-top:15px;
+    }
+
+    nav a{
+        font-size:18px;
+    }
+
+    /* HERO */
+    .hero{
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+        line-height:1.2;
+    }
+
+    .hero-text p{
+        font-size:18px;
+    }
+
+    .hero-img{
+        width:100%;
+        margin-top:30px;
+    }
+
+    .hero-img img{
+        width:100%;
+        max-width:320px;
+        height:auto;
+    }
+
+    /* HORARIO */
+    .horario{
+        position:static;
+        margin-top:30px;
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .horario-box{
+        width:100%;
+        max-width:350px;
+    }
+
+}
