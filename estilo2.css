@@ -1,0 +1,749 @@
+/* FONDO GENERAL */
+.vacunas{
+    padding: 60px 20px;
+    background:
+    linear-gradient(rgba(248, 185, 219, 0.9),
+    rgba(255,255,255,0.9)),
+    url("huellitas.png");
+
+    background-size: cover;
+    border-radius: 35px;
+    margin: 50px auto;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* TITULO */
+.titulo-vacunas{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-vacunas h2{
+    font-size: 45px;
+    color: white;
+    font-family: cursive;
+
+    background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+
+    display: inline-block;
+    padding: 18px 35px;
+    border-radius: 30px;
+
+    box-shadow: 0 8px 20px rgba(255,105,180,0.3);
+}
+
+.titulo-vacunas p{
+    margin-top: 15px;
+    color: #666;
+    font-size: 18px;
+}
+
+/* TIMELINE */
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 30px;
+}
+
+/* CARDS */
+.vac-card{
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+
+    text-align: center;
+    padding-bottom: 25px;
+
+    position: relative;
+
+    transition: 0.4s ease;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.vac-card:hover{
+    transform: translateY(-10px) scale(1.03);
+}
+
+/* NUMERO */
+.circle{
+    width: 70px;
+    height: 70px;
+
+    background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* IMAGEN */
+.vac-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+.vac-card h3{
+    margin-top: 20px;
+    color: #eb8bb0;
+    font-size: 28px;
+    font-family: cursive;
+}
+
+.vac-card p{
+    font-size: 22px;
+    color: #70c5c3;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.vac-card span{
+    display: block;
+    padding: 0 20px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* BENEFICIOS */
+.beneficios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 380px));
+    justify-content: center;
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+/* INCLUIDO */
+.beneficio-box{
+    background: linear-gradient(135deg,#70c5c3,#eb8bb0);
+
+    padding: 35px 25px;
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beneficio-box h3{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.beneficio-box p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: .95;
+}
+
+/* PRECIO */
+.precio-box{
+    background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+
+    color: white;
+
+    padding: 35px 25px;
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(255,105,180,0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio-box h3{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.precio-box p{
+    font-size: 16px;
+}
+
+/* NOTAS */
+.nota{
+    margin-top: 35px;
+    text-align: center;
+    color: #777;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/* SECCION FELINOS */
+.felinos{
+    margin-top: 60px;
+
+    padding: 60px 25px;
+
+    background:
+    linear-gradient(rgba(255,255,255,0.92),
+    rgba(240, 135, 135, 0.92)),
+    url("huellitas2.png");
+
+    background-size: cover;
+
+    border-radius: 35px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* TITULO */
+.titulo-felinos{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-felinos h2{
+    display: inline-block;
+
+    padding: 18px 35px;
+
+    border-radius: 30px;
+
+    color: rgb(248, 247, 247);
+
+    font-size: 45px;
+
+    font-family: cursive;
+
+    background:
+    linear-gradient(135deg,#eb8bb0,#70c5c3);
+
+    box-shadow: 0 8px 20px rgba(255,105,180,0.3);
+}
+
+.titulo-felinos p{
+    margin-top: 15px;
+    color: #666;
+    font-size: 18px;
+}
+
+/* GRID */
+.felino-grid{
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap: 30px;
+}
+
+/* TARJETAS */
+.felino-card{
+    background: white;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    text-align: center;
+
+    padding-bottom: 25px;
+
+    transition: 0.4s ease;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.felino-card:hover{
+    transform: translateY(-10px);
+}
+
+/* CIRCULO */
+.edad{
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+    linear-gradient(135deg,#eb8bb0,#70c5c3);
+
+    color: white;
+
+    font-weight: bold;
+    font-size: 24px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* IMAGEN */
+.felino-card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+.felino-card h3{
+    margin-top: 20px;
+
+    color: #eb8bb0;
+
+    font-size: 28px;
+
+    font-family: cursive;
+}
+
+.felino-card h4{
+    color: #70c5c3;
+
+    font-size: 24px;
+
+    margin: 10px 0;
+}
+
+.felino-card p{
+    color: #666;
+
+    padding: 0 20px;
+
+    line-height: 1.6;
+}
+
+/* EXTRAS */
+.extras-felinos{
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+/* CAJAS */
+.prueba-box,
+.gratis-box,
+.precio-felino{
+    padding: 35px 25px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prueba-box h3,
+.gratis-box h3,
+.precio-felino h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.prueba-box p,
+.gratis-box p,
+.precio-felino p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* PRUEBA */
+.prueba-box{
+    background:
+    linear-gradient(135deg,#eb8bb0,#70c5c3);
+
+    color: white;
+}
+
+/* INCLUIDO */
+.gratis-box{
+    background:
+    linear-gradient(135deg,#70c5c3,#eb8bb0);
+
+    color: #fff;
+}
+
+
+
+
+/* PRECIO */
+.precio-felino{
+    background:
+    linear-gradient(135deg,#eb8bb0,#70c5c3);
+
+    color: white;
+}
+
+/* NOTAS */
+.nota-felina{
+    margin-top: 35px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+
+/* ULTRASONIDOS */
+.ultrasonido{
+    padding: 60px 20px;
+
+    background:
+    linear-gradient(rgba(255,255,255,0.92),
+    rgba(255,255,255,0.92)),
+    url("huellitas.png");
+
+    border-radius: 35px;
+
+    margin: 50px auto;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* TITULO */
+.ultra-title{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.ultra-title h2{
+    font-size: 42px;
+    font-family: cursive;
+
+    color: #f3f3f3;
+
+    background: linear-gradient(135deg,#70c5c3,#eb8bb0);
+
+    display: inline-block;
+
+    padding: 18px 35px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.ultra-title p{
+    margin-top: 15px;
+    color: #666;
+    font-size: 18px;
+}
+
+/* GRID */
+.ultra-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 35px;
+}
+
+/* TARJETAS */
+.ultra-card{
+    background: rgb(250, 215, 215);
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+    transition: 0.4s ease;
+}
+
+.ultra-card:hover{
+    transform: translateY(-10px);
+}
+
+/* IMAGEN */
+.ultra-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* INFO */
+.ultra-info{
+    padding: 25px;
+}
+
+.ultra-info h3{
+    text-align: center;
+
+    color: #eb8bb0;
+
+    font-size: 30px;
+
+    font-family: cursive;
+
+    margin-bottom: 20px;
+}
+
+/* LISTA */
+.ultra-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.ultra-info li{
+    background: #f9eaec;
+
+    margin-bottom: 12px;
+
+    padding: 14px;
+
+    border-radius: 15px;
+
+    color: #555;
+
+    font-size: 16px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* NOTA */
+.nota-ultra{
+    margin-top: 40px;
+
+    text-align: center;
+
+    background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 25px;
+
+    font-size: 18px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+
+
+.mascota-flotante{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+.mascota-flotante img{
+    width: 120px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.mascota-flotante img:hover{
+    transform: scale(1.08);
+}
+
+@keyframes flotar{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-12px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:768px){
+
+.mascota-flotante img{
+    width:90px;
+}
+
+}
+
+.intro-veterinaria{
+    max-width:900px;
+    margin:40px auto;
+    padding:25px 35px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.intro-veterinaria h2{
+    color:#eb8bb0;
+    font-size:2rem;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.intro-veterinaria p{
+    color:#555;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.intro-veterinaria{
+    margin:25px 15px;
+    padding:20px;
+}
+
+.intro-veterinaria h2{
+    font-size:1.5rem;
+}
+
+.intro-veterinaria p{
+    font-size:1rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f9eaec, #ffffff);
+}
+
+/* SECCIÓN */
+.seccion-vet{
+    padding:60px 20px;
+    text-align:center;
+}
+
+/* CONTENEDOR SERVICIOS */
+.nubes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
+    gap:30px;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* TARJETA DE SERVICIO */
+.nube{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+    border-top:5px solid #eb8bb0;
+}
+
+/* ÍCONO */
+.nube-icono{
+    width:60px;
+    height:60px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#eb8bb0,#70c5c3);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+}
+
+/* EFECTO HOVER */
+.nube:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* TEXTO */
+.nube h3{
+    color:#eb8bb0;
+    margin-bottom:10px;
+    font-size:19px;
+}
+
+.nube p{
+    color:#666;
+    font-size:14px;
+}
+
+/*=========================================
+      LLAMADA A LA ACCIÓN (reemplaza precios)
+=========================================*/
+
+.precio-box h3,
+.precio-felino h3{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.precio-box p,
+.precio-felino p{
+    font-size: 16px;
+    margin-bottom: 15px;
+    opacity: .95;
+}
+
+.btn-cta-precio{
+    display: inline-block;
+    background: white;
+    color: #eb8bb0;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: .3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.btn-cta-precio:hover{
+    transform: scale(1.05);
+    background: #f9eaec;
+}

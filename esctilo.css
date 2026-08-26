@@ -1,0 +1,1232 @@
+/* FUENTE TITULOS */
+.logo-text,
+.hero-text h1,
+.promo h2,
+.about-text h2,
+.galeria h2,
+.ubicacion h2,
+.social h2{
+    font-family: 'Lobster', cursive !important;
+
+    color: #0a0a0a;
+}
+
+/* TAMAÑOS */
+.logo-text{
+    font-size: 45px;
+}
+
+.hero-text h1{
+    font-size: 75px;
+}
+
+.promo h2,
+.about-text h2,
+.galeria h2,
+.ubicacion h2,
+.social h2{
+    font-size: 50px;
+}
+
+
+/* HERO */
+.hero{
+    min-height: 90vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 50px 8%;
+
+    position: relative;
+}
+
+/* HORARIO */
+.horario{
+    position: absolute;
+
+    right: 8%;
+
+    top: 120px;
+}
+
+/* CAJA */
+.horario-box{
+    width: 350px;
+
+    background: #eb8bb0;
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    color: rgb(16, 14, 14);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TITULO */
+.horario-box h2{
+    font-family: 'Lobster', cursive;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+/* HORAS */
+.horario-box h3{
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+.horario-box p{
+    font-size: 15px;
+}
+
+
+
+
+/* TITULOS SECCIONES */
+.promo h2,
+.about-text h2,
+.galeria h2,
+.ubicacion h2,
+.social h2{
+    font-size: 40px;
+
+    color: #131313;
+
+    margin-bottom: 35px;
+}
+
+/* TEXTO NORMAL */
+body,
+p,
+li,
+a,
+span{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+
+    background: #f9eaec;
+
+    color: #0b0b0b;
+}
+
+/* HEADER CADJAAAA DE LOGOOOOOOOOOOO */
+.header{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: #eb8bb0;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img{
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid #eb8bb0;
+}
+
+.logo-text{
+    font-size: 32px;
+
+    color: #eb8bb0;
+
+    font-family: cursive;
+}
+
+/* MENU */
+nav{
+    display: flex;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+
+    color: #555;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #0a0a0a;
+}
+
+/* HERO imagen de fondooooooooo */
+.hero{
+    min-height: 90vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 50px 8%;
+
+    position: relative;
+
+    background:
+    linear-gradient(rgba(255,255,255,0.75),
+    rgba(255,255,255,0.75)),
+    url("2.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.hero-text h1{
+    font-size: 65px;
+
+    color: #191315;
+
+    font-family: cursive;
+
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 22px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.btn,
+.btn2{
+    padding: 16px 30px;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.btn{
+    background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+}
+
+.btn2{
+    background: linear-gradient(135deg,#70c5c3,#eb8bb0);
+}
+
+.btn:hover,
+.btn2:hover{
+    transform: scale(1.07);
+}
+
+/* HERO IMG */
+.hero-img{
+    flex: 1;
+    text-align: center;
+}
+
+.hero-img img{
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 35px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+/* PROMOS AMAAAS CONCENTIRA '''''''''''''''''''''''''''''''''''''''''''''' */
+.promo{
+    padding: 80px 8%;
+}
+
+.promo h2{
+    text-align: center;
+
+    font-size: 45px;
+
+    font-family: cursive;
+
+    color: #eb8bb0  ;
+
+    margin-bottom: 50px;
+}
+
+.promo-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+
+    gap: 30px;
+}
+
+.promo-card{
+    background: #f9eaec      ;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding-bottom: 25px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    transition: 0.4s;
+}
+
+.promo-card:hover{
+    transform: translateY(-10px);
+}
+
+.promo-card img{
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+}
+
+.promo-card h3{
+    margin-top: 20px;
+
+    color: #0c0c0c;
+
+    font-family: cursive;
+
+    font-size: 28px;
+}
+
+.promo-card p{
+    padding: 15px;
+}
+
+.promo-card span{
+    background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+
+    color: #fff;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+/* ABOUT */
+.about{
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 80px 8%;
+}
+
+.about-img,
+.about-text{
+    flex: 1;
+}
+/* IMAGENES DE ESTETICA Y VETERINARIA   */
+.about-img img{
+    width: 70%;
+
+    border-radius: 35px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.about-text h2{
+    font-size: 30px;
+
+    color: #0e0d0d;
+
+    font-family: cursive;
+
+    margin-bottom: 25px;
+}
+
+.about-text ul{
+    list-style: none;
+}
+
+.about-text li{
+    margin-bottom: 18px;
+
+    background: #faf7f8;
+
+    padding: 15px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+/* GALERIA */
+.galeria{
+    padding: 80px 8%;
+}
+
+.galeria h2{
+    text-align: center;
+
+    font-size: 45px;
+
+    color: #eb8bb0;
+
+    font-family: cursive;
+
+    margin-bottom: 40px;
+}
+
+.galeria-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 20px;
+}
+
+.galeria-grid img{
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    transition: 0.4s;
+}
+
+.galeria-grid img:hover{
+    transform: scale(1.04);
+}
+
+/* UBICACION ''''''''''''''''''''''''''''''''''''''''''''''''''*/
+.ubicacion{
+    padding: 80px 8%;
+}
+
+.ubicacion h2{
+    text-align: center;
+
+    font-size: 45px;
+
+    color: #eb8bb0;
+
+    font-family: cursive;
+
+    margin-bottom: 35px;
+}
+
+.mapa{
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* REDES */
+.social{
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+.social h2{
+    font-size: 45px;
+
+    color: #eb8bb0;
+
+    font-family: cursive;
+
+    margin-bottom: 35px;
+}
+
+.social-buttons{
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.social-btn{
+    padding: 16px 28px;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    color: #fdfbfc;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.fb{
+    background: #1877f2;
+}
+
+.ig{
+    background: linear-gradient(135deg,#eb8bb0,#ffb347,#70c5c3);
+}
+
+.wt{
+    background: #25d366;
+}
+
+.tt{
+    background: #0c0d0c;
+}
+
+.social-btn:hover{
+    transform: scale(1.08);
+}
+
+
+
+
+
+
+/* Títulos de secciones''''''''''''''''''''''''''''''''''''''''''' */
+.container h6,
+.container h4 {
+    font-family: "Georgia", cursive;
+    font-style: italic;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    
+    background: linear-gradient(135deg, #eb8bb0, #70c5c3);
+    
+    padding: 15px;
+    border-radius: 20px;
+    
+    margin-bottom: 20px;
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    
+    letter-spacing: 1px;
+}
+
+/* Subtítulos */
+.container h5 {
+    text-align: center;
+    color: #555;
+    font-family: cursive;
+    margin-bottom: 5px;
+}
+
+/* Fondo general de la pagina productos  */
+.container {
+    background: #f9eaec;
+    padding: 25px;
+    border-radius: 25px;
+    margin: 30px auto;
+}
+
+/* Grid de productos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Tarjetas */
+.product {
+    background: #fdf8f9;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    
+    transition: 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* Imágenes */
+.product img {
+    width: 100%;
+    border-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Nombre producto */
+.product h3 {
+    font-family: cursive;
+    color: #0c090a;
+    margin-top: 10px;
+}
+
+/* Precio */
+.product p {
+    color: #70c5c3;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
+
+/* SECCIÓN SPA */
+.spa-section {
+    background: #f9eaec;
+    padding: 40px 20px;
+    border-radius: 25px;
+    margin: 40px auto;
+}
+
+.spa-section h2 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 35px;
+    color: rgb(12, 12, 12);
+
+    background: linear-gradient(135deg, #eb8bb0, #70c5c3);
+
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+/* GRID */
+.spa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* TARJETAS */
+.spa-card {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s ease;
+}
+
+.spa-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMÁGENES */
+.spa-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+.spa-card h3 {
+    color: #eb8bb0;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.spa-card p {
+    padding: 15px;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.ubicacion{
+    padding: 60px 20px;
+    background: linear-gradient(135deg,#f9eaec,#f9eaec);
+    
+    border-radius: 35px;
+    margin: 50px auto;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.ubicacion h2{
+    text-align: center;
+
+    font-size: 40px;
+    font-family: cursive;
+
+    color: white;
+
+    background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+
+    padding: 18px;
+    border-radius: 25px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 5px 15px rgba(255,105,180,0.3);
+}
+
+.mapa{
+    overflow: hidden;
+    border-radius: 30px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.mapa iframe{
+    display: block;
+}
+
+.aviso-productos{
+    background: #f9eaec;
+    border-left: 6px solid #70c5c3;
+    color: #1f2937;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+
+.mascota-flotante{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+.mascota-flotante img{
+    width: 120px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.mascota-flotante img:hover{
+    transform: scale(1.08);
+}
+
+@keyframes flotar{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-12px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width:768px){
+
+.mascota-flotante img{
+    width:90px;
+}
+
+}
+
+
+
+
+
+
+/* ===========================
+   SECCIÓN DE TESTIMONIOS
+=========================== */
+
+.testimonios{
+    width:90%;
+    max-width:1400px;
+    margin:80px auto;
+    padding:50px 0;
+    background:#f9eaec;
+}
+
+.testimonios h2{
+    text-align:center;
+    font-size:2.8rem;
+    color:#0e0e0e;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    text-align:center;
+    color:#666;
+    font-size:1.1rem;
+    margin-bottom:50px;
+}
+
+.contenedor-testimonios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(550px,1fr));
+    gap:35px;
+}
+
+.tarjeta-testimonio{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:0.3s ease;
+}
+
+.tarjeta-testimonio:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
+}
+
+.foto{
+    flex-shrink:0;
+}
+
+.foto img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #eb8bb0;
+}
+
+.contenido{
+    flex:1;
+}
+
+.contenido h3{
+    color:#111212;
+    font-size:1.8rem;
+    margin-bottom:15px;
+}
+
+.contenido p{
+    color:#555;
+    font-size:1.1rem;
+    line-height:1.8;
+    text-align:justify;
+}
+
+.contenido span{
+    display:block;
+    margin-top:15px;
+    color:#090909;
+    font-size:1rem;
+    font-weight:bold;
+}
+
+/* Responsive */
+
+@media (max-width:900px){
+
+    .contenedor-testimonios{
+        grid-template-columns:1fr;
+    }
+
+    .tarjeta-testimonio{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .contenido p{
+        text-align:center;
+    }
+
+    .foto img{
+        width:180px;
+        height:180px;
+    }
+
+}
+
+@media (max-width:500px){
+
+    .testimonios h2{
+        font-size:2rem;
+    }
+
+    .foto img{
+        width:150px;
+        height:150px;
+    }
+
+    .contenido h3{
+        font-size:1.5rem;
+    }
+
+    .contenido p{
+        font-size:1rem;
+    }
+
+}
+
+
+/*================ REVIEWS ================*/
+
+.promo{
+    width:90%;
+    max-width:1300px;
+    margin:80px auto;
+    text-align:center;
+}
+
+.promo h2{
+    font-size:2.8rem;
+    color:#0c0c0c;
+    margin-bottom:10px;
+}
+
+.promo-subtitulo{
+    color:#666;
+    margin-bottom:45px;
+    font-size:1.1rem;
+}
+
+.promo-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.promo-card{
+    background:#fff;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.35s;
+}
+
+.promo-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+.promo-card img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #eb8bb0;
+    margin-bottom:20px;
+}
+
+.promo-card h3{
+    color:#eb8bb0;
+    font-size:1.7rem;
+    margin-bottom:15px;
+}
+
+.promo-card p{
+    color:#555;
+    line-height:1.7;
+    font-size:1rem;
+}
+
+@media(max-width:768px){
+
+    .promo-card img{
+        width:200px;
+        height:200px;
+    }
+
+}
+
+
+
+/* ===== Introducción Servicios ===== */
+
+.intro-servicios{
+    width:85%;
+    max-width:800px;
+    margin:40px auto;
+    padding:20px 30px;
+    background:#70c5c3;
+    color:#fff;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.intro-servicios h2{
+    font-size:1.8rem;
+    margin-bottom:10px;
+}
+
+.intro-servicios p{
+    font-size:1rem;
+    line-height:1.6;
+}
+
+
+
+/*=========================================
+      BTN DE CITAS PARA SPAA
+=========================================*/
+
+
+.btn-agendar{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+    color: white;
+    text-decoration: none;
+
+    padding: 16px 35px;
+    border-radius: 50px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    box-shadow: 0 8px 20px rgba(255,111,165,.35);
+
+    transition: .3s ease;
+}
+
+.btn-agendar:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(255,111,165,.5);
+    background: linear-gradient(135deg,#70c5c3,#eb8bb0);
+}
+
+.btn-agendar:active{
+    transform: scale(.96);
+}
+
+
+
+
+
+/*=========================================
+      RESPONSIVE SOLO PARA CELULAR
+=========================================*/
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* HEADER */
+    .header{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:20px;
+    }
+
+    .logo-container{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+        margin-top:15px;
+    }
+
+    nav a{
+        font-size:18px;
+    }
+
+    /* HERO */
+    .hero{
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+        line-height:1.2;
+    }
+
+    .hero-text p{
+        font-size:18px;
+    }
+
+    .hero-img{
+        width:100%;
+        margin-top:30px;
+    }
+
+    .hero-img img{
+        width:100%;
+        max-width:320px;
+        height:auto;
+    }
+
+    /* HORARIO */
+    .horario{
+        position:static;
+        margin-top:30px;
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .horario-box{
+        width:100%;
+        max-width:350px;
+    }
+
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo-principal{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo h1{
+    margin: 0;
+    font-size: 38px;
+    color: #2b2b2b;
+}
+
+.imagen-lado{
+    width: 80px;      /* Cambia este valor si las quieres más grandes */
+    height: 80px;
+    object-fit: contain;
+}
+.aviso-tiempo{
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 12px 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: #fff;
+    border: 1px solid #f9eaec;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.06);
+}
+
+.aviso-tiempo span{
+    font-size: 22px;
+}
+
+.aviso-tiempo p{
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.aviso-tiempo strong{
+    color: #eb8bb0;
+}
+

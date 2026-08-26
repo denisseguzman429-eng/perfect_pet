@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veterinaria - PerfectPet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="esctilo.css">
+<link rel="stylesheet" href="estilo2.css">
+
+<style>
+    /* ===========================================
+       PÁGINA VETERINARIA — DISEÑO SIMPLIFICADO
+       (estilos con prefijo vp- para no chocar
+        con el resto del sitio)
+    =========================================== */
+
+    .vp-wrap{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 6%;
+    }
+
+    /* BOTÓN REGRESAR */
+    .vp-regresar-bar{
+        max-width: 1200px;
+        margin: 25px auto 0;
+        padding: 0 6%;
+    }
+
+    .vp-btn-regresar{
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #fff;
+        color: #eb8bb0;
+        border: 2px solid #eb8bb0;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        padding: 10px 22px;
+        border-radius: 40px;
+        transition: 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+
+    .vp-btn-regresar:hover{
+        background: #eb8bb0;
+        color: #fff;
+        transform: translateX(-4px);
+    }
+
+    /* INTRO */
+    .vp-intro{
+        text-align: center;
+        max-width: 850px;
+        margin: 45px auto 55px;
+        padding: 0 6%;
+    }
+
+    .vp-intro h1{
+        font-family: 'Lobster', cursive;
+        font-size: 46px;
+        color: #131313;
+        margin-bottom: 18px;
+    }
+
+    .vp-intro p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        line-height: 1.7;
+        color: #444;
+    }
+
+    /* TÍTULOS DE SECCIÓN */
+    .vp-titulo-seccion{
+        text-align: center;
+        margin: 0 auto 40px;
+        max-width: 700px;
+        padding: 0 6%;
+    }
+
+    .vp-titulo-seccion h2{
+        display: inline-block;
+        font-family: 'Lobster', cursive;
+        font-size: 34px;
+        color: #fff;
+        background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+        padding: 14px 40px;
+        border-radius: 25px;
+        box-shadow: 0 8px 20px rgba(235,139,176,0.3);
+        margin-bottom: 14px;
+    }
+
+    .vp-titulo-seccion p{
+        font-family: 'Poppins', sans-serif;
+        color: #555;
+        font-size: 16px;
+    }
+
+    /* SECCIÓN GENERAL (fondo alterno) */
+    .vp-section{
+        padding: 60px 0;
+    }
+
+    .vp-section.alt{
+        background: #fdf3f5;
+        border-radius: 40px;
+        margin: 0 auto 20px;
+        max-width: 1300px;
+    }
+
+    /* GRID SERVICIOS GENERALES */
+    .vp-servicios-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 22px;
+    }
+
+    .vp-servicio-card{
+        background: #fff;
+        border-radius: 22px;
+        padding: 28px 20px;
+        text-align: center;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        transition: 0.3s ease;
+    }
+
+    .vp-servicio-card:hover{
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    .vp-servicio-icono{
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+
+    .vp-servicio-card h3{
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        color: #131313;
+        margin-bottom: 8px;
+    }
+
+    .vp-servicio-card p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: #666;
+        line-height: 1.5;
+    }
+
+    /* TARJETAS GRANDES (vacunas / imagenología) */
+    .vp-grid-grande{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+    }
+
+    .vp-card-grande{
+        background: #fff;
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        transition: 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vp-card-grande:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 16px 32px rgba(0,0,0,0.15);
+    }
+
+    .vp-card-grande img{
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .vp-card-contenido{
+        padding: 26px 26px 30px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vp-card-contenido h3{
+        font-family: 'Lobster', cursive;
+        font-size: 26px;
+        color: #eb8bb0;
+        margin-bottom: 12px;
+    }
+
+    .vp-card-contenido p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 18px;
+        flex: 1;
+    }
+
+    .vp-etiquetas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .vp-etiqueta{
+        background: #f9eaec;
+        color: #b34d72;
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 7px 16px;
+        border-radius: 20px;
+    }
+
+    .vp-card-contenido .vp-mini-btn{
+        align-self: flex-start;
+        background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 11px 26px;
+        border-radius: 30px;
+        transition: 0.3s ease;
+    }
+
+    .vp-card-contenido .vp-mini-btn:hover{
+        background: linear-gradient(135deg,#70c5c3,#eb8bb0);
+    }
+
+    /* IMAGENOLOGÍA (tarjeta ancha, una sola imagen) */
+    .vp-imagenologia{
+        background: #fff;
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        align-items: stretch;
+    }
+
+    .vp-imagenologia img{
+        width: 100%;
+        height: 100%;
+        min-height: 320px;
+        object-fit: cover;
+    }
+
+    .vp-imagenologia-texto{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .vp-imagenologia-texto h3{
+        font-family: 'Lobster', cursive;
+        font-size: 30px;
+        color: #131313;
+        margin-bottom: 14px;
+    }
+
+    .vp-imagenologia-texto p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 15.5px;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+    /* NOTA FINAL */
+    .vp-nota{
+        text-align: center;
+        max-width: 700px;
+        margin: 45px auto 0;
+        padding: 0 6%;
+        font-family: 'Poppins', sans-serif;
+        color: #777;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    /* CTA FINAL */
+    .vp-cta{
+        text-align: center;
+        padding: 55px 6% 70px;
+    }
+
+    .vp-cta h2{
+        font-family: 'Lobster', cursive;
+        font-size: 32px;
+        color: #131313;
+        margin-bottom: 20px;
+    }
+
+    .vp-cta a{
+        display: inline-block;
+        background: linear-gradient(135deg,#eb8bb0,#70c5c3);
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 16px 42px;
+        border-radius: 40px;
+        box-shadow: 0 10px 22px rgba(235,139,176,0.35);
+        transition: 0.3s ease;
+    }
+
+    .vp-cta a:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 14px 28px rgba(235,139,176,0.45);
+    }
+
+    @media (max-width: 760px){
+        .vp-imagenologia{
+            grid-template-columns: 1fr;
+        }
+        .vp-imagenologia img{
+            min-height: 220px;
+        }
+        .vp-intro h1{
+            font-size: 34px;
+        }
+        .vp-titulo-seccion h2{
+            font-size: 26px;
+            padding: 12px 26px;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<header class="header">
+<div class="logo">
+    <img src="dogdog.png" class="imagen-lado">
+
+    <div class="logo-container">
+        <img src="logo.jpg" class="logo-img">
+        <span> <h1>PerfectPet </h1></span>
+<br><a href="https://wa.me/525541262583" class="btn">
+Agendar cita
+
+</a>
+<img src="abstra.png" class="imagen-lado">
+    </div>
+    </div>
+
+    <nav>
+<a href="index.html">Inicio</a>
+<a href="veterinaria.html">Veterinaria</a>
+<a href="spa.html">Spa</a>
+<a href="productos.html">Productos</a>
+</nav>
+
+</header>
+
+<!-- BOTÓN REGRESAR -->
+<div class="vp-regresar-bar">
+    <a href="index.html" class="vp-btn-regresar">← Regresar al inicio</a>
+</div>
+
+<!-- INTRO -->
+<section class="vp-intro">
+    <h1>🩺 Servicios Veterinarios</h1>
+    <p>
+        En <strong>Perfect Pet</strong> cuidamos la salud y el bienestar de tu mascota con
+        atención profesional, equipo especializado y mucho amor por los animales.
+    </p>
+</section>
+
+<!-- SERVICIOS GENERALES -->
+<section class="vp-section">
+    <div class="vp-wrap">
+        <div class="vp-servicios-grid">
+
+            <div class="vp-servicio-card">
+                <div class="vp-servicio-icono">🐕‍🦺</div>
+                <h3>Consulta Dermatológica</h3>
+                <p>Salud de la piel, oído y pelaje de tu mascota.</p>
+            </div>
+
+            <div class="vp-servicio-card">
+                <div class="vp-servicio-icono">🐾</div>
+                <h3>Reproducción</h3>
+                <p>Control y seguimiento especializado.</p>
+            </div>
+
+            <div class="vp-servicio-card">
+                <div class="vp-servicio-icono">📜</div>
+                <h3>Certificados</h3>
+                <p>Documentos oficiales para tu mascota.</p>
+            </div>
+
+            <div class="vp-servicio-card">
+                <div class="vp-servicio-icono">🩺</div>
+                <h3>Consultas Generales</h3>
+                <p>Chequeo médico de rutina.</p>
+            </div>
+
+            <div class="vp-servicio-card">
+                <div class="vp-servicio-icono">🐄</div>
+                <h3>Animales de Producción</h3>
+                <p>Asesoría para ganaderos y productores.</p>
+            </div>
+
+
+            <div class="vp-servicio-card">
+                <div class="vp-servicio-icono">✅</div>
+                <h3>Check-up General</h3>
+                <p>Un chequeo preventivo permite detectar a tiempo padecimientos silenciosos. </p>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+<!-- VACUNAS -->
+<section class="vp-section alt">
+    <div class="vp-titulo-seccion">
+        <h2> Vacunas</h2>
+        <p>Esquemas de vacunación completos para perros y gatos</p>
+    </div>
+
+    <div class="vp-wrap">
+        <div class="vp-grid-grande">
+
+            <div class="vp-card-grande">
+                <img src="vacunas.jpg" alt="Vacunas para perros">
+                <div class="vp-card-contenido">
+                    <h3>Vacunas para Perros</h3>
+                    <p>
+                        Contamos con el esquema completo de vacunación canina, desde cachorro
+                        hasta adulto, para mantener a tu perro protegido en cada etapa.
+                    </p>
+                    <a href="https://wa.me/525541262583" class="vp-mini-btn">Agendar cita</a>
+                </div>
+            </div>
+
+            <div class="vp-card-grande">
+                <img src="v gato.jpg" alt="Vacunas para gatos">
+                <div class="vp-card-contenido">
+                    <h3>Vacunas para Gatos</h3>
+                    <p>
+                        Ofrecemos el esquema completo de vacunación felina, cuidando a tu michi
+                        desde sus primeras semanas de vida.
+                    </p>
+                    <a href="https://wa.me/525541262583" class="vp-mini-btn">Agendar cita</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <p class="vp-nota">Consulta con nuestro equipo el esquema y calendario recomendado para tu mascota.</p>
+</section>
+
+<!-- IMAGENOLOGÍA -->
+<section class="vp-section">
+    <div class="vp-titulo-seccion">
+        <h2> Imagenología</h2>
+        <p>Diagnóstico preciso con equipo profesional</p>
+    </div>
+
+    <div class="vp-wrap">
+        <div class="vp-imagenologia">
+            <img src="u y y.jpg" alt="Imagenología veterinaria">
+            <div class="vp-imagenologia-texto">
+                <h3>Ultrasonidos y Rayos X</h3>
+                <p>
+                    Realizamos estudios de ultrasonido y rayos X con equipo profesional,
+                    brindando a tu mascota una atención segura, delicada y precisa durante
+                    todo el procedimiento.
+                </p>
+                <div class="vp-etiquetas">
+                    <span class="vp-etiqueta">Ultrasonidos</span>
+                    <span class="vp-etiqueta">Rayos X</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="mascota-flotante">
+    <img src="abstra.png" alt="Doctora Perfect">
+</div>
+
+<script src="eventos.js"></script>
+
+</body>
+</html>
